@@ -11,7 +11,7 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var recordingLabel: UILabel!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         stopRecordingButton.isEnabled = false
@@ -32,15 +32,15 @@ class ViewController: UIViewController {
         recordButton.isEnabled = false
         recordingLabel.text = "Recording in Progress"
     }
-    
+
     @IBAction func stopRecording(_ sender: Any) {
         recordButton.isEnabled = true
         stopRecordingButton.isEnabled = false
         recordingLabel.text = "Tap to Record"
     }
-    
+
     @IBOutlet weak var recordButton: UIButton!
-    
+
     @IBOutlet weak var stopRecordingButton: UIButton!
 }
 
